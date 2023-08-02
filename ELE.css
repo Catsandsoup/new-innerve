@@ -1,0 +1,199 @@
+#style.css
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: borden-box;
+  font-family: 'Source Serif 4', serif;
+}
+body
+{
+	overflow-x: hidden;
+	min-height: 100vh;
+	background-image: url(bg.jpg);
+	background-blend-mode: darken;
+	background-size: cover;
+	height: 100vh;
+}
+#header
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	padding:30px 100px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center; 
+	background: #f8fffd5c;
+}
+#header .logo
+{
+	color:#ff7b60;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+	border-radius: 20px;
+  padding: 6px 15px;
+}
+#header ul
+{
+	display: flex;
+	justify-content: centre;
+	align-items:center;
+}
+#header ul li
+{
+	list-style:none;
+	margin-left: 20px;
+}
+#header ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #ff7b60;
+	border-radius:20px;
+}
+#header ul li a:hover ,#header ul li a.active
+{
+	background:#ff7b60;
+	color: #fff ;
+	border-radius: 20px;
+}
+.gallery
+{
+	display:flex;
+	justify-content:space-between;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.card
+{
+	overflow: hidden;
+	justify-content: space-between;
+	position: relative;
+	cursor: pointer;
+	margin: 5px;
+}
+.card_details
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color:rgba(255,255,255,0.5) ;
+	backdrop-filter: blur(1.2px) brightness(1);
+	padding:0.5rem;
+	opacity :0;
+	transition: opacity 350ms;
+}
+.card_details h2, .h2
+{
+	vertical-align: bottom;
+	top:1rem;
+	transition: top 350ms;
+	line-height: 1.5rem;
+	color: white;
+	text-shadow: 0px 0px 11px #fa4900;
+}
+.card_details span
+{
+	top:50rem;
+	transition: top 350ms;
+	line-height: 10rem;
+	color: white;
+	text-shadow: 0px 0px 11px #fa4900;
+}
+.card:hover img
+{
+	transform: scale(1.1);
+}
+.card:hover .card_details{
+opacity: 1;
+}
+.card:hover .card_details h2
+{
+	top:0;
+}
+.section
+{
+	text-align: center;
+	color: white;
+}
+#footer
+{
+	background:#ff7b60;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding:20px 100px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+#footer p
+{
+	color:white;
+}
+#footer a 
+{
+	color:white;
+	text-decoration: none;
+}
+.title
+{
+	padding-top: 120px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.title h2
+{
+	border-radius: 15px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	color:white;
+}
+.title h4
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	color:white;
+}
+.title a, .community a, .newsletter a
+{
+	padding: 6px 15px;
+	background-color: #ff7b60;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+}
+.community 
+{
+	padding-left: 50px;
+	padding-right:50px;
+	color:white;
+	text-align: center;
+}
+.community p 
+{
+	padding-left:50px;
+	padding-right:50px;
+	color:white;
+	text-align: center;
+}
+.newsletter
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	color:white;
+	padding-bottom: 130px;
+}
